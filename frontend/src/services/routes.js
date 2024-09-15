@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = 'http://localhost:8000';
+const API_BASE_URL = 'https://vector-shift-2.onrender.com';
 
 
 export const parsePipelines = async (graph) => {
