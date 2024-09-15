@@ -1,28 +1,14 @@
 import { PipelineToolbar } from "./toolbar";
 import { PipelineUI } from "./ui";
-import { SubmitButton } from "./submit";
-import { useStore } from "./store";
-import { shallow } from "zustand/shallow";
-import { selector } from "./types";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
-    const {
-    nodes,
-    edges,
-  } = useStore(selector, shallow);
   return (
-    <div
-      style={{
-        backgroundColor: "#000",
-        height: "100vh",
-        width: "100vw",
-      }}
-    >
+    <div>
       <PipelineToolbar />
       <PipelineUI />
-      <SubmitButton nodes={nodes} edges={edges}/>
     </div>
-  );
+  )
 }
 
 export default App;

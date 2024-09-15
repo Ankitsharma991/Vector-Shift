@@ -22,14 +22,14 @@ export const DraggableNode = ({ type, label }) => {
         display: "flex",
         alignItems: "center",
         borderRadius: "12px",
-        backgroundColor: "#000",
-        border: "2px solid #fff",
+        backgroundColor: "#1a093f",
+        border: "0.5px solid rgba(255, 255, 255, 0.4)",
         justifyContent: "center",
         flexDirection: "column",
         padding: "10px",
         margin: "10px",
         boxSizing: "border-box",
-        boxShadow: "0px 4px 12px rgba(0, 0, 0, 0.3)",
+        boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.3)",
         transition: "border-color 0.3s ease-in-out, color 0.3s ease-in-out",
       }}
       draggable
@@ -48,7 +48,7 @@ export const DraggableNode = ({ type, label }) => {
           fontFamily:
             '"Studio Feixen Sans Medium", "Studio Feixen Sans Medium Placeholder", sans-serif',
           fontStyle: "normal",
-          fontWeight: 400,
+          fontWeight: 800,
           fontSize: "16px",
           lineHeight: "24px",
           textAlign: "center",
