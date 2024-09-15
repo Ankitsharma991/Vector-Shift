@@ -2,38 +2,16 @@
 // Displays the drag-and-drop UI
 // --------------------------------------------------
 
-import { useState, useRef, useCallback } from "react";
+import { useState, useRef, useCallback, useEffect } from "react";
 import ReactFlow, { Controls, Background, MiniMap } from "reactflow";
 import { useStore } from "./store";
 import { shallow } from "zustand/shallow";
-import { InputNode } from "./nodes/inputNode";
-import { LLMNode } from "./nodes/llmNode";
-import { OutputNode } from "./nodes/outputNode";
-import { TextNode } from "./nodes/textNode";
 
 import "reactflow/dist/style.css";
-import { CustomNode } from "./nodes/CustomNode";
+import { nodeTypes, selector } from "./types";
 
 const gridSize = 20;
 const proOptions = { hideAttribution: true };
-
-const nodeTypes = {
-  customInput: InputNode,
-  customOutput: OutputNode,
-  llm: LLMNode,
-  text: TextNode,
-  custom: CustomNode,
-};
-
-const selector = (state) => ({
-  nodes: state.nodes,
-  edges: state.edges,
-  getNodeID: state.getNodeID,
-  addNode: state.addNode,
-  onNodesChange: state.onNodesChange,
-  onEdgesChange: state.onEdgesChange,
-  onConnect: state.onConnect,
-});
 
 export const PipelineUI = () => {
   const reactFlowWrapper = useRef(null);
@@ -52,6 +30,11 @@ export const PipelineUI = () => {
     let nodeData = { id: nodeID, nodeType: `${type}` };
     return nodeData;
   };
+
+  // useEffect(()=>{
+  //   console.log("nodes", nodes)
+  //   console.log("edges", edges)
+  // },[onNodesChange, onEdgesChange])
 
   const onDrop = useCallback(
     (event) => {

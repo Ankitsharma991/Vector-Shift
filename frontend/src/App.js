@@ -1,8 +1,15 @@
 import { PipelineToolbar } from "./toolbar";
 import { PipelineUI } from "./ui";
 import { SubmitButton } from "./submit";
+import { useStore } from "./store";
+import { shallow } from "zustand/shallow";
+import { selector } from "./types";
 
 function App() {
+    const {
+    nodes,
+    edges,
+  } = useStore(selector, shallow);
   return (
     <div
       style={{
@@ -13,7 +20,7 @@ function App() {
     >
       <PipelineToolbar />
       <PipelineUI />
-      <SubmitButton />
+      <SubmitButton nodes={nodes} edges={edges}/>
     </div>
   );
 }

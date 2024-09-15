@@ -1,4 +1,8 @@
-export const SubmitButton = () => {
+import { parsePipelines } from "./services/routes";
+
+export const SubmitButton = ({
+  nodes, edges
+}) => {
   const buttonStyle = {
     padding: "12px 24px",
     background: "linear-gradient(45deg, #461892 25%, #3377D0 75%)",
@@ -32,10 +36,19 @@ export const SubmitButton = () => {
     Object.assign(e.target.style, buttonStyle);
   };
 
+  const handleSubmit = () => {
+     const object = {
+      nodes: nodes,
+      edges: edges
+     }
+     console.log(object)
+     parsePipelines(object)
+  }
+
   return (
     <div style={containerStyle}>
       <button
-        type="submit"
+        onClick={handleSubmit}
         style={buttonStyle}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
