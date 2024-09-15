@@ -79,6 +79,3 @@ def check_dag(nodes: List[Node], edges: List[Edge]) -> bool:
 async def hello():
     return {"hello": "world"}
 
-if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
