@@ -1,0 +1,150 @@
+/* .base-node-container {
+  width: 200px;
+  height: auto;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 12px;
+  background-color: #1a093f;
+  padding: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  font-family: "Arial", sans-serif;
+}
+
+.node-content {
+  margin-bottom: 10px;
+}
+
+.node-label {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 6px;
+  color: #fff;
+}
+
+.node-description {
+  font-size: 12px;
+  color: #ccc;
+  margin-bottom: 10px;
+}
+
+.input-section {
+  margin-top: 10px;
+}
+
+.input-section label {
+  display: block;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+.input-field,
+.select-field {
+  margin-top: 4px;
+  padding: 6px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #420c86;
+  color: #fff;
+}
+
+.input-field::placeholder {
+  color: #ccc;
+}
+
+.handle-input {
+  background-color: #ff4d4d;
+}
+
+.handle-output {
+  background-color: #4caf50;
+}
+
+.handle-input,
+.handle-output {
+  margin-top: 10px;
+} */
+
+
+
+
+
+.base-node-container {
+  width: 200px;
+  height: auto;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 12px;
+  background-color: #1a093f;
+  padding: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  font-family: "Arial", sans-serif;
+}
+
+.node-content {
+  margin-bottom: 10px;
+}
+
+.node-label {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 6px;
+  color: #fff;
+}
+
+.node-description {
+  font-size: 12px;
+  color: #ccc;
+  margin-bottom: 10px;
+}
+
+.input-section {
+  margin-top: 10px;
+}
+
+.input-section label {
+  display: block;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+.input-field,
+.select-field {
+  margin-top: 4px;
+  padding: 6px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #420c86;
+  color: #fff;
+}
+
+.input-field::placeholder {
+  color: #ccc;
+}
+
+.file-image {
+  margin-top: 4px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.file-image-placeholder {
+  max-width: 100px; /* Adjust as needed */
+  max-height: 100px; /* Adjust as needed */
+}
+
+.handle-input {
+  background-color: #ff4d4d;
+}
+
+.handle-output {
+  background-color: #4caf50;
+}
+
+.handle-input,
+.handle-output {
+  margin-top: 10px;
+}
