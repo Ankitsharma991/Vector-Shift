@@ -2,7 +2,7 @@
 // Displays the drag-and-drop UI
 // --------------------------------------------------
 
-import { useState, useRef, useCallback, useEffect } from "react";
+import { useState, useRef, useCallback } from "react";
 import ReactFlow, { Controls, Background, MiniMap } from "reactflow";
 import { useStore } from "./store";
 import { shallow } from "zustand/shallow";
@@ -78,10 +78,7 @@ export const PipelineUI = () => {
 
   return (
     <>
-      <div
-        ref={reactFlowWrapper}
-        style={{ width: "100wv", height: "90vh", backgroundColor: "#110928"}}
-      >
+      <div ref={reactFlowWrapper} style={containerStyle}>
         <ReactFlow
           className="relative"
           nodes={nodes}
@@ -104,4 +101,10 @@ export const PipelineUI = () => {
       </div>
     </>
   );
+};
+
+const containerStyle = {
+  width: "100wv",
+  height: "90vh",
+  backgroundColor: "#110928",
 };

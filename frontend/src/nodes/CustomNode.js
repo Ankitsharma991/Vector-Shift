@@ -23,7 +23,7 @@ export const CustomNode = ({ id, data }) => {
       showInput={true}
       inputHandles={inputHandles}
       outputHandles={outputHandles}
-    //   showFileInput={true}
+      showFileInput={true}
     />
   );
 };
