@@ -22,7 +22,7 @@ Ensure you have the following installed:
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-repo/vectorshift-assessment.git
+   https://github.com/Ankitsharma991/Vector-Shift
    ```
 
 2. Navigate to the frontend directory:
