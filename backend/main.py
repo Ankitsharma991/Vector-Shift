@@ -6,7 +6,7 @@ from collections import defaultdict, deque
 
 app = FastAPI()
 
-# Add CORS middleware
+# Adding CORS middleware
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"], 
@@ -50,7 +50,7 @@ async def parse_pipeline(data: GraphData):
     return output
 
 def check_dag(nodes: List[Node], edges: List[Edge]) -> bool:
-    # Create adjacency list and in-degree count
+    # Creating adjacency list and in-degree count
     adj_list = defaultdict(list)
     in_degree = defaultdict(int)
     
@@ -75,6 +75,7 @@ def check_dag(nodes: List[Node], edges: List[Edge]) -> bool:
     # If visited count is equal to number of unique nodes, it's a DAG
     return visited_count == len(nodes)
 
+# This route is for testing backend server
 @app.get("/hello")
 async def hello():
     return {"hello": "world"}
