@@ -17,8 +17,6 @@ This repository contains the frontend and backend code for the VectorShift Front
 Ensure you have the following installed:
 - Node.js (v16 or above)
 - Python (v3.7 or above)
-- FastAPI (for the backend)
-- Tailwind CSS and React Bootstrap (for frontend styling)
 
 ### Installation
 
@@ -106,10 +104,7 @@ The frontend integrates with the backend using FastAPI. The following functional
 - **FastAPI**: Modern web framework for building APIs with Python.
 - **Uvicorn**: ASGI server to run the FastAPI backend.
 
-## Future Improvements
-- Improve validation logic for variables in the Text node to handle more complex scenarios.
-- Add more nodes and create a larger node abstraction library.
-- Enhance user experience through better UX/UI feedback and real-time validation.
+## Improvements Areas
+- Improved validation logic for variables in the Text node to handle more complex scenarios.
+- Enhanced user experience through better UX/UI feedback and real-time validation.
 
-write a readme file code, for the above details.
-make sure you code contains all the above details 
