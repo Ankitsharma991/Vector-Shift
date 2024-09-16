@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { ModalComponent } from "./modal";
-import { parsePipelines } from "./services/routes";
+import { parsePipelines } from "../services/routes";
 
 const Loader = () => (
   <div style={loaderStyle}>

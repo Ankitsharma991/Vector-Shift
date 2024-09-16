@@ -1,7 +1,7 @@
-import { DraggableNode } from './draggableNode';
-import { selector } from './types';
+import { DraggableNode } from '../draggableNode';
+import { selector } from '../constant/types';
 import { SubmitButton } from "./submit";
-import { useStore } from "./store";
+import { useStore } from "../services/store";
 import { shallow } from "zustand/shallow";
 
 export const PipelineToolbar = () => {

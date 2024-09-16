@@ -1,4 +1,4 @@
-import { PipelineToolbar } from "./toolbar";
+import { PipelineToolbar } from "./components/toolbar";
 import { PipelineUI } from "./ui";
 import 'bootstrap/dist/css/bootstrap.min.css';
 

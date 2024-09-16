@@ -1,8 +1,8 @@
-import { InputNode } from "./nodes/inputNode";
-import { LLMNode } from "./nodes/llmNode";
-import { OutputNode } from "./nodes/outputNode";
-import { TextNode } from "./nodes/textNode";
-import { CustomNode } from "./nodes/CustomNode";
+import { InputNode } from "../nodes/inputNode";
+import { LLMNode } from "../nodes/llmNode";
+import { OutputNode } from "../nodes/outputNode";
+import { TextNode } from "../nodes/textNode";
+import { CustomNode } from "../nodes/CustomNode";
 
 export const nodeTypes = {
   customInput: InputNode,

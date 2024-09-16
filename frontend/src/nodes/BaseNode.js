@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Handle, Position, useReactFlow } from "reactflow";
-import "./BaseNode.css";
+import "../styles/BaseNode.css";
 import FILE from "../assets/files.png";
 import { IoMdClose } from "react-icons/io";
 

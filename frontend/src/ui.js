@@ -4,11 +4,11 @@
 
 import { useState, useRef, useCallback } from "react";
 import ReactFlow, { Controls, Background, MiniMap } from "reactflow";
-import { useStore } from "./store";
+import { useStore } from "./services/store";
 import { shallow } from "zustand/shallow";
 
 import "reactflow/dist/style.css";
-import { nodeTypes, selector } from "./types";
+import { nodeTypes, selector } from "./constant/types";
 
 const gridSize = 20;
 const proOptions = { hideAttribution: true };
